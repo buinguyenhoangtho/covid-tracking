@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tracking App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="http://easyautocomplete.com/resources/flags.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="scripts/easy-autocomplete.min.css">
+</head>
+  <body>
+   
+    <div class="container">
+        <div class="row">
+          
+          <div class=" col-md-8 mt-4  left">
+            
+            <h1>Thống kê Covid-19</h1>
+            <!-- ngày -->
+              <h6 class="date" id="date">Ngày</h6>
+              <div class="form-group">
+                <!-- <label for=""></label> -->
+                <input type="text" id ="search" class="form-control" placeholder="Nhập tên quốc gia để hiện số liệu">
+                <input type="text" hidden id="search_field" class="form-control" name="">
+                  <div id="result"></div>
+              </div>
+              
+              </div>
+            <div class="col-md-4 mt-5 right main-wrapper">
+              <!-- case -->
+              
+              <h1 class="title">Số liệu toàn cầu</h1>
+              <div class="card">
+                <div class="card-header card-header__cases">
+                  <i class="ri-virus-fill" style="font-size:20px"></i>
+                  <span class="title">
+                    Số ca nhiễm
+                  </span>
+                  </div>
+                <div class="card-body">
+                  <div class="align-content-center">
+  
+                   <span id="cases_number" class="number"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- recovery -->
+              <div class="card card-dead">
+                <div class="card-header card-header__dead">
+                  <i class="ri-hospital-line" style="font-size: 20px;"></i>
+
+                  <span class="title">
+                    Số ca hồi phục
+                  </span>
+                  </div>
+                <div class="card-body">
+                  <div class="align-content-center">
+  
+                    <span id="recovery_number" class="number"></span>
+                  </div>
+                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatem placeat dignissimos ipsa quaerat consectetur doloremque sequi dolorem velit sint. A deleniti accusantium, quidem fuga est harum odit laborum officiis. -->
+                </div>
+              </div>
+              <!-- death -->
+              <div class="card">
+                <div class="card-header card-header__recorvery">
+                  <i class="ri-virus-fill" style="font-size:20px"></i>
+                  <span class="title">
+                    Số ca tử vong
+                  </span>
+                  </div>
+                <div class="card-body">
+                  <div class="align-content-center">
+  
+                   <span id="death_number" class="number"></span>
+                  </div>
+                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatem placeat dignissimos ipsa quaerat consectetur doloremque sequi dolorem velit sint. A deleniti accusantium, quidem fuga est harum odit laborum officiis. -->
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="scripts/jquery.easy-autocomplete.js"></script>
+  </body>
+ 
+  <script>
+    // Search số liệu 
+    auto_complete();
+  </script>
+
+<footer>
+<div class="container">
+  <div class="row">
+    <div class="text-align-center">
+        Dự án phi lợi nhuận và phục vụ nhu cầu học tập.
+        <p>🗒️ Nguồn số liệu: <a href="https://disease.sh/">Disease.sh</a></p>
+     
+    </div>
+  </div>
+</div>
+</footer>
+
+  
+</html>
